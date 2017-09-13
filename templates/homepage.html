@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+  <h1>Students</h1>
+  <ul>
+    {% for id, first, last, github in students %}
+        <li> <a href="/student?github={{github}}">{{first}} {{last}}</a> <br> </li>
+    {% endfor %}
+  </ul>
+  <a href="/add-student">Add a student</a>
+  <br>
+
+  <h1>Projects</h1>
+  <ul>
+    {% for id, title, description, max_grade in projects %}
+        <li><a href="/project/{{title}}">{{title}}</a> <br></li>
+    {% endfor %}
+  </ul>
+  <a href="/add-project">Add a project</a><br>
+
+  <a href="/add-grade">Add a student grade</a>
+</body>
+</html>

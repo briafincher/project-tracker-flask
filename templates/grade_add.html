@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+    <title>Add Grade</title>
+</head>
+
+<body>
+
+  <form action="/grade-add", method="POST">
+    <select name="student">
+      {% for student in students%}
+        <option value="{{student[3]}}">{{student[1]}} {{student[2]}}</option>
+      {% endfor %}
+    </select>
+
+    <select name="project">
+      {% for project in projects%}
+        <option value="{{project[1]}}">{{project[1]}}</option>
+      {% endfor %}
+    </select>
+
+      <label>Enter Grade
+          <input type="text" name="grade">
+      </label>
+      <input type="submit" value="Submit Grade">
+  </form>
+
+</body>
+</html>
