@@ -1,0 +1,66 @@
+body {
+    font-family: sans-serif;
+    margin: 0px;
+}
+
+.content {
+    margin: 25px;
+}
+
+#header {
+    margin: 0px;
+    width: 100%;
+    height: 100px;
+    background-color: #00e38d;
+}
+
+#header span a {
+    display: inline-block;
+    font-size: 50px;
+    color: white;
+    font-weight: 900;
+    height: 50px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+}
+
+.p img {
+    width: 25px;
+    height: 25px;
+}
+
+.s img {
+    width: 40px;
+    height: 40px;
+}
+
+.icons {
+    display: inline-block;
+    margin-right: 25px;
+    float: right;
+    margin-bottom: 25px;
+}
+
+.icons img {
+    height: 24px;
+    width: 24px;
+}
+
+#grade {
+    margin-top: 8px;
+    height: 32px;
+    width: 30px;
+}
+
+#search {
+    margin-bottom: 4px;
+}

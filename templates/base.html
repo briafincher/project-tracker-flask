@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>{% block title %}TITLE GOES HERE{% endblock %}</title>
+</head>
+
+<body>
+  <div id='header'>
+      <span id="title">
+          <a href="/"><img id="logo" src="/static/003-file.png">  Project Tracker</a>
+      </span>
+      <span class="icons">
+        <a href="/student-search"><img id="search" src="/static/magnifying-glass-white.png"></a><a href="/add-grade"><img id="grade" src="/static/top-grades-white.png"></a>
+      </span>
+  </div>
+  <div class='content'>{% block content %}CONTENT GOES HERE{% endblock %}</div>
+
+</body>
+</html>

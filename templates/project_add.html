@@ -1,10 +1,8 @@
-<!doctype html>
-<html>
-<head>
-    <title>Add Project</title>
-</head>
+{% extends 'base.html' %}
 
-<body>
+{% block title %}Add Project{% endblock %}
+
+{% block content %}
 
   <form action="/project-add", method="POST">
     <label>Enter Project Title
@@ -19,5 +17,4 @@
       <input type="submit" value="Submit Project">
   </form>
 
-</body>
-</html>
+{% endblock %}

@@ -1,13 +1,10 @@
-<!doctype html>
-<html>
-<head>
-    <title>Grade added</title>
-</head>
+{% extends 'base.html' %}
 
-<body>
+{% block title %}Grade Added{% endblock %}
+
+{% block content %}
 
     <h1> Grade successfully added for {{student}}! </h1>
     <a href="/student?github={{student}}"> Go to student info </a>
 
-</body>
-</html>
+{% endblock %}
