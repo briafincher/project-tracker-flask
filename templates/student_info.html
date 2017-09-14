@@ -9,11 +9,23 @@
 
   <p>GitHub Account: {{ github }}</p>
 
-  <ul>
+<!--   <ul>
     {% for project, grade in grades %}
-        <li> Project: <a href="/project/{{project}}">{{project}}</a> <br>
-            Grade: {{grade}} </li>
+        <li> Project: <a href="/project/{{project}}">{{project}}</a>, Grade: {{grade}} </li>
     {% endfor %}
-  </ul>
+  </ul> -->
+
+    <table>
+    <tr>
+        <th>Project</th>
+        <th>Grade</th>
+    </tr>
+  {% for project, grade in grades %}
+    <tr>
+        <td><a href="/project/{{project}}">{{project}}</a></td>
+        <td>{{grade}}</td>
+    </tr>
+  {% endfor %}
+  </table>
 
 {% endblock %}

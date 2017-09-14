@@ -9,12 +9,17 @@
   <p>Description: {{ description }}</p>
   <p>Maximum Grade: {{grade}}</p>
 
-  <ul>
-    {% for github, grade in grades %}
-        <li> Github: <a href="/student?github={{github}}">{{github}}</a> <br>
-            Grade: {{grade}} </li>
-    {% endfor %}
-  </ul>
-
+  <table>
+    <tr>
+        <th>Github</th>
+        <th>Grade</th>
+    </tr>
+  {% for github, grade in grades %}
+    <tr>
+        <td><a href="/student?github={{github}}">{{github}}</a></td>
+        <td>{{grade}}</td>
+    </tr>
+  {% endfor %}
+  </table>
 
 {% endblock %}
